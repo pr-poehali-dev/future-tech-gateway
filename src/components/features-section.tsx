@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Корейская косметика",
+    description: "Уходовая и декоративная косметика на основе натуральных корейских ингредиентов. Передовые формулы для сияющей кожи.",
+    icon: "sparkles",
+    badge: "Бестселлер",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
+    title: "БАДы и витамины",
+    description: "Сбалансированные биодобавки для поддержки иммунитета, энергии и здоровья всей семьи. Научные формулы из Кореи.",
+    icon: "leaf",
+    badge: "Здоровье",
+  },
+  {
+    title: "Уход за волосами",
+    description: "Профессиональные шампуни, маски и сыворотки для восстановления и питания волос. Корейские инновации для красоты.",
+    icon: "wind",
+    badge: "Уход",
+  },
+  {
+    title: "Уход за телом",
+    description: "Лосьоны, скрабы и кремы для нежной и бархатистой кожи. Натуральные компоненты с доказанным эффектом.",
+    icon: "heart",
+    badge: "Премиум",
+  },
+  {
+    title: "Товары для дома",
+    description: "Безопасные и эффективные средства для уборки дома. Бережные к природе и вашей семье формулы.",
+    icon: "home",
+    badge: "Эко",
+  },
+  {
+    title: "Гарантия качества",
+    description: "Все продукты Atomy проходят строгий контроль качества. Более 20 лет на рынке — бренд, которому доверяют миллионы.",
+    icon: "shield",
     badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
-  },
-  {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Линейка продуктов Atomy</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Премиум качество из Кореи — косметика, здоровье и уход для всей семьи
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "sparkles" && "✨"}
+                    {feature.icon === "leaf" && "🌿"}
+                    {feature.icon === "wind" && "💨"}
+                    {feature.icon === "heart" && "💗"}
+                    {feature.icon === "home" && "🏠"}
+                    {feature.icon === "shield" && "🛡️"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
